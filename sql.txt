@@ -1,0 +1,18 @@
+create database P36;
+use P36;
+
+CREATE TABLE IF NOT EXISTS student (
+    roll_number VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    pin_code VARCHAR(20) NOT NULL
+);
+
+-- Insert sample students (optional)
+INSERT INTO student (roll_number, name, city, pin_code) VALUES
+    ('S001', 'John Doe', 'New York', '10001'),
+    ('S002', 'Jane Smith', 'Los Angeles', '90001'),
+    ('S003', 'Bob Johnson', 'Chicago', '60601'),
+    ('S004', 'Alice Brown', 'San Francisco', '94105');
+    
+    select * from student;
